@@ -36,6 +36,12 @@ nav ul {
     padding-left: 10px;
 }
 
+.flower:hover {
+    background-color: rgb(233, 153, 233);
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
 .flower p {
     font-size: 20px;
     margin-left: 40px;
