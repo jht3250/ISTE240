@@ -31,6 +31,7 @@ nav {
 }
 
 ul {
+    display: flex;
     list-style-type: none;
 }
 
@@ -46,6 +47,11 @@ ul .right {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 15px;
+}
+
+ul li {
+    text-align: center;
+    flex: 1;
 }
 
 #links {
@@ -69,4 +75,14 @@ legend {
     border-width: 2px;
     padding: 5px;
     background-color: rgb(180, 232, 253)
+}
+ 
+@media (max-width: 1300px) {
+    header {
+        grid-template-columns: 20% 70%;
+    }
+
+    nav {
+        font-size: 15px;
+    }
 }
