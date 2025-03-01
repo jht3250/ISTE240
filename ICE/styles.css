@@ -1,0 +1,80 @@
+/*
+John Treon, Jake Hamilton
+ISTE 240
+In Class Exercise: Rotating Images
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.imgHolder {
+    width: 833px;
+    height: 104px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#bigImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bigImage > img {
+    height: 25em;
+}
+
+#loading {
+    height: 10px; 
+    width: 1%;
+    background-color: skyblue;
+    margin: 10px;
+    transition: width 3s; 
+}
+
+#imgHolder > img {
+    height: 100px;
+    width: 100px;
+}
+
+#imgHolder > img:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+#imgHolder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+}
+
+.imagePlayer {
+    border-style: solid;
+    border-radius: 10px;
+    width: 50%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.active {
+    opacity: 0.5;
+}
