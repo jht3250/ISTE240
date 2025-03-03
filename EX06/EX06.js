@@ -11,11 +11,31 @@ function jsStyle() {
     element.style.fontSize = '20px';
 }
 
+function moveText() {
+    // moves the text to the right by 10px
+    var element = document.getElementById('text');
+    var currentPos = parseInt(element.style.marginLeft) || 0;
+    element.style.marginLeft = currentPos + 10 + "px";
+}
+
 // finds the value of the inputted first name and last name from fname and lname respectively, outputs them as a concatinated string.
 function getFormValues() {
     var first = document.getElementById('fname').value;
     var last = document.getElementById('lname').value;
     alert(first + ' ' + last);
+}
+
+function howMany() {
+    // finds all elements with the tag option, outputs the length of the array (the number of elements)
+    var children = document.getElementById('regform').children.getElementsByTagName('input');
+    var count2 = 0;
+    for (var i = 0; i < children.length; i++) {
+        if (children[i].type == 'text') {
+            count2++;
+        }
+    }
+    console.log("There are " + children.length + " input elements on the page.");
+    console.log("There are " + count2 + " text input elements on the page.");
 }
 
 // finds all elements with the tag option, outputs the length of the array (the number of elements)
