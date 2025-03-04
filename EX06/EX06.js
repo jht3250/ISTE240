@@ -27,15 +27,19 @@ function getFormValues() {
 
 function howMany() {
     // finds all elements with the tag option, outputs the length of the array (the number of elements)
-    var children = document.getElementById('regform').children.getElementsByTagName('input');
+    var children = document.getElementsByTagName('input');
+    var count = 0;
     var count2 = 0;
     for (var i = 0; i < children.length; i++) {
-        if (children[i].type == 'text') {
-            count2++;
+        if (children[i].parentElement.id == 'regForm') {
+            count++;
+            if (children[i].type == 'text') {
+                count2++;
+            }
         }
     }
-    console.log("There are " + children.length + " input elements on the page.");
-    console.log("There are " + count2 + " text input elements on the page.");
+    console.log("There are " + count + " input elements in the form.");
+    console.log("There are " + count2 + " text input elements in the form.");
 }
 
 // finds all elements with the tag option, outputs the length of the array (the number of elements)
@@ -44,9 +48,26 @@ function getOptions() {
 	alert(count.length);
 }
 
-// sets the color of id = 'rb' to red
+// finds the div parent element of the input element and changes its background color to the selected color
+function colorChanger() {
+    var color = document.getElementById('mySelect').value;
+    var element = recursiveParent(document.getElementById('colors'));
+    element.style.backgroundColor = color;
+}
+
+// recursively finds the div parent element of the input element
+function recursiveParent(element) {
+    if (element.parentElement.tagName == 'DIV') {
+        return element.parentElement;
+    }
+    else {
+        return recursiveParent(element.parentElement);
+    }
+}
+
+// sets the color of id = 'rb' to the color selected in 6c
 function textRed() {
-    document.getElementById('rb').style.color = 'red';
+    document.getElementById('rb').style.color = document.getElementById('mySelect').value;
 }
 
 // sets the color of id = 'rb' to black
@@ -58,12 +79,24 @@ function textBlack() {
 function multiply() {
     var first = parseInt(document.getElementById('firstoperand').value);
     var second = parseInt(document.getElementById('secondoperand').value);
-    document.getElementById('result').innerHTML = first * second;
+    const quotient = document.createTextNode(first * second);
+    var resultElement = document.getElementById('result');
+    if (resultElement.hasChildNodes()) {
+        resultElement.replaceChild(quotient, resultElement.childNodes[0]);
+    } else {
+        resultElement.appendChild(quotient);
+    }
 }
 
-// takes the values of the first operand and the second operand, parses them as an int, and performs multiplication
+// takes the values of the first operand and the second operand, parses them as an int, and performs division
 function divide() {
     var first = parseInt(document.getElementById('firstoperand').value);
     var second = parseInt(document.getElementById('secondoperand').value);
-    document.getElementById('result').innerHTML = first / second;
+    const dividend = document.createTextNode(first / second);
+    var resultElement = document.getElementById('result');
+    if (resultElement.hasChildNodes()) {
+        resultElement.replaceChild(dividend, resultElement.childNodes[0]);
+    } else {
+        resultElement.appendChild(dividend);
+    }
 }
