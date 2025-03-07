@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightcoral;
+}
+
+.flexnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.homepage-layout {
+    display: flex;
+    height: calc(92vh - 60px); /* Adjust height to fill the screen minus the header */
+}
+
+.left-image {
+    width: 50%; /* Make the left-image container fill the left half */
+    height: 100%; /* Make the left-image container fill the height */
+    border-top: 2px solid white;
+}
+
+.left-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
+.right-links {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%; /* Make the right-links container fill the height */
+}
+
+.link-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0; /* Remove gaps between rectangles */
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    height: 25%; /* Make each rectangle fill a quarter of the right half */
+    border-top: 2px solid white; /* Add border between rectangles */
+}
+
+.bottom {
+    border-bottom: 2px solid white; /* Add border between rectangles */
+}
+
+.link-box:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #555;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
