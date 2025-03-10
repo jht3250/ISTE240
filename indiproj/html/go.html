@@ -1,72 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/styles-3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <script src="../js/scripts.js"></script>
-        <title>Places to Go</title>
     </head>
-    <body>
+    <div id="toggle" class="meow" onclick="openMenu();">
+        <i class="fas fa-bars"></i>
+    </div>
+    <section class="showcase" id="page">
         <header>
-            <h1>John's Guide to Greece</h1>
-            <nav>
-                <ul class="flexnav">
-                    <li class="dropdown">
-                        <a href="../html/index.html" class="nav-button">Home</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/go.html" class="nav-button">Go</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/eat.html" class="nav-button">Eat</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/do.html" class="nav-button">Do</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/see.html" class="nav-button">See</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+            <h2 class="logo">Places to Go</h2>
         </header>
         <main>
-            <div class = "smallgrid"> 
-                <div class="entry1">
-                    <img src="../assets/images/turtle.jpg">
-                    <div class="entry1desc">
-                        <h3> Introduction </h3>
-                        <span>The Finger Lakes are a group of 11 long, narrow, roughly north-south 
-                            lakes in Central New York in the United States. This region is 
-                            defined by a series of long, narrow lakes that were created by the movement of 
-                            glaciers during the last Ice Age. The lakes are oriented roughly in a north-south 
-                            direction, and the longest, Cayuga Lake, is 40 miles long. The region is known for its 
-                            natural beauty, and it is a popular destination for outdoor activities such as hiking, boating, and fishing.
+            <div class="smallgrid"> 
+                <div class="entry">
+                    <img src="../assets/images/lefkada.jpg" class="entry-image">
+                    <div class="entry-desc">
+                        <h3> Lefkada </h3>
+                        <span>
+                            Lefkada is a beautiful island located in the Ionian Sea, off the western coast of Greece. 
+                            The island is known for its stunning beaches, crystal-clear waters, and picturesque villages. 
+                            Some of the most popular beaches on the island include Porto Katsiki, Egremni, and Kathisma. 
+                            Lefkada is my personal favorite place to visit in Greece, and I highly recommend it to anyone looking for a relaxing and
+                            beautiful vacation spot.
                         </span>
                     </div>
                 </div>
-                <div class="entry2">
-                    <div class="entry2desc">
+                <div class="entry">
+                    <div class="entry-desc">
                         <h3> History </h3>
                         <span>The Finger Lakes region has a rich history that dates back thousands of years. The area was originally 
                             home to the Iroquois, a group of Native American tribes that lived in the region for centuries. 
@@ -75,11 +37,11 @@
                             which produce some of the best wines in the United States. 
                         </span>
                     </div>
-                    <img src="../assets/images/turtle.jpg">
+                    <img src="../assets/images/turtle.jpg" class="entry-image">
                 </div>
-                <div class="entry3">
-                    <img src="../assets/images/turtle.jpg">
-                    <div class="entry3desc">
+                <div class="entry">
+                    <img src="../assets/images/turtle.jpg" class="entry-image">
+                    <div class="entry-desc">
                         <h3> Places to Go</h3>
                         <span>
                             The Finger Lakes region is home to a number of beautiful parks and natural areas that are perfect for outdoor activities. 
@@ -89,65 +51,19 @@
                         </span>
                     </div>
                 </div>
-                <div class="img4">
-                    <div class="entry4desc">
-                        <h3>Environment</h3>
-                        <span>The Finger Lakes region is known for its unique landscape and environment. The region is home to a number of 
-                            different ecosystems, including forests, wetlands, and grasslands. The region is also home to a number of rare and 
-                            endangered species, such as the bald eagle and the eastern massasauga rattlesnake. The region is also known for its 
-                            diverse geology, which includes a number of unique rock formations and geological features. The region is also home to 
-                            a number of beautiful waterfalls, such as Taughannock Falls and Buttermilk Falls.
-                        </span>
-                    </div>
-                    <img src="../assets/images/turtle.jpg">
-                </div>
             </div>
-            <!--<div class="mobile">
-                <img src="./images/fingerlakes.jpg">
-                <div class="entry1desc">
-                    <h3> Introduction </h3>
-                    <span>The Finger Lakes are a group of 11 long, narrow, roughly north-south 
-                        lakes in Central New York in the United States. This region is 
-                        defined by a series of long, narrow lakes that were created by the movement of 
-                        glaciers during the last Ice Age. The lakes are oriented roughly in a north-south 
-                        direction, and the longest, Cayuga Lake, is 40 miles long. The region is known for its 
-                        natural beauty, and it is a popular destination for outdoor activities such as hiking, boating, and fishing.
-                    </span>
-                </div>
-                <img src="./images/alpinelake.jpg">
-                <div class="entry2desc">
-                    <h3> History </h3>
-                    <span>The Finger Lakes region has a rich history that dates back thousands of years. The area was originally 
-                        home to the Iroquois, a group of Native American tribes that lived in the region for centuries. 
-                        The arrival of European settlers in the 17th century brought significant changes to the region, 
-                        and the area became an important center of trade and commerce. Today, the Finger Lakes region is known for its wineries, 
-                        which produce some of the best wines in the United States. 
-                    </span>
-                </div>
-                <img src="./images/watkinsglen.jpg">
-                <div class="entry3desc">
-                    <h3> Places to Go</h3>
-                    <span>
-                        The Finger Lakes region is home to a number of beautiful parks and natural areas that are perfect for outdoor activities. 
-                        Some of the most popular parks in the region include Watkins Glen State Park, Taughannock Falls State Park, and Letchworth State Park. 
-                        The region is also home to a number of charming towns and villages that are worth exploring, such as Skaneateles, Seneca Falls, and Hammondsport. 
-                        Personally, I have been to Watkins Glen many times, and it is one of my favorite places to visit in the Finger Lakes!
-                    </span>
-                </div>
-                <img src="./images/skaneateles.jpg">
-                <div class="entry4desc">
-                    <h3>Environment</h3>
-                    <span>The Finger Lakes region is known for its unique landscape and environment. The region is home to a number of 
-                        different ecosystems, including forests, wetlands, and grasslands. The region is also home to a number of rare and 
-                        endangered species, such as the bald eagle and the eastern massasauga rattlesnake. The region is also known for its 
-                        diverse geology, which includes a number of unique rock formations and geological features. The region is also home to 
-                        a number of beautiful waterfalls, such as Taughannock Falls and Buttermilk Falls.
-                    </span>
-                </div>
-            </div>-->
         </main>
-        <footer>
-            <p>&copy; 2025 John Treon. All rights reserved.</p>
-        </footer>
-    </body>
+    </section>
+    <div class="menu">
+        <div id="close" class="hide" onclick="openMenu();">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./do.html">Things to Do</a></li>
+        <li><a href="./eat.html">Food to Eat</a></li>
+        <li><a href="./see.html">Things to See</a></li>
+        <li><a href="./go.html">Places to Go</a></li>
+        </ul>
+    </div>
 </html>

@@ -43,6 +43,10 @@ body {
     opacity: 0;
 }
 
+.hide {
+    display: none;
+}
+
 .right-links {
     display: flex;
     flex-direction: column;
@@ -50,6 +54,29 @@ body {
     height: 100%; 
     border-top: 2px solid white;
     border-bottom: 2px solid white;
+}
+
+.entry {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.entry-desc{
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 50%;
+    font-size: 1.8vw;
+    margin-top: auto;
+    word-wrap: break-word;
+    border-style: solid;
+    border-width:1px;
+    border-radius: 10px;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
 .link-box {

@@ -1,68 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/styles-3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <script src="../js/scripts.js"></script>
-        <title>John's Guide to Greece</title>
     </head>
-    <body>
+    <div id="toggle" class="meow" onclick="openMenu();">
+        <i class="fas fa-bars"></i>
+    </div>
+    <section class="showcase" id="page">
         <header>
-            <h1>John's Guide to Greece</h1>
-            <nav>
-                <ul class="flexnav">
-                    <li class="dropdown">
-                        <a href="../html/index.html" class="nav-button">Home</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/go.html" class="nav-button">Go</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/eat.html" class="nav-button">Eat</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/do.html" class="nav-button">Do</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/see.html" class="nav-button">See</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+            <h2 class="logo">Visit Greece</h2>
         </header>
         <main class="homepage-layout">
             <div class="left-image">
                 <img id="main-image" src="../assets/images/santorini.webp" alt="Greece" />
             </div>
             <div class="right-links">
-                <a href="../html/go.html" class="link-box" data-image="../assets/images/map.jpg">Places to Go</a>
-                <a href="../html/eat.html" class="link-box" data-image="../assets/images/food.jpg">Food to Eat</a>
-                <a href="../html/do.html" class="link-box" data-image="../assets/images/turtle.jpg">Things to Do</a>
-                <a href="../html/see.html" class="link-box bottom" data-image="../assets/images/parthenon.jpg">Things to See</a>
+                    <a href="../html/go.html" class="link-box" data-image="../assets/images/map.jpg" onmouseover="changeImage(this, this.getAttribute('data-image'))" onmouseout="revertImage()">Places to Go</a>
+                    <a href="../html/eat.html" class="link-box" data-image="../assets/images/food.jpg" onmouseover="changeImage(this, this.getAttribute('data-image'))" onmouseout="revertImage()">Food to Eat</a>
+                    <a href="../html/do.html" class="link-box" data-image="../assets/images/turtle.jpg" onmouseover="changeImage(this, this.getAttribute('data-image'))" onmouseout="revertImage()">Things to Do</a>
+                    <a href="../html/see.html" class="link-box bottom" data-image="../assets/images/parthenon.jpg" onmouseover="changeImage(this, this.getAttribute('data-image'))" onmouseout="revertImage()">Things to See</a>
             </div>
         </main>
-        <footer>
-            <p>&copy; 2025 John Treon. All rights reserved.</p>
-        </footer>
-    </body>
+    </section>
+    <div class="menu">
+        <div id="close" class="hide" onclick="openMenu();">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./do.html">Things to Do</a></li>
+        <li><a href="./eat.html">Food to Eat</a></li>
+        <li><a href="./see.html">Things to See</a></li>
+        <li><a href="./go.html">Places to Go</a></li>
+        </ul>
+    </div>
+    
 </html>
