@@ -1,3 +1,4 @@
+/* Reset and font settings */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Header styles */
 header {
     position: absolute;
     top: 0;
@@ -25,12 +27,58 @@ header h2 {
     margin: auto 0;
 }
 
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+/* Grid layout for small items */
 .smallgrid {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
+/* Map styles */
 .map {
     background-color: white;
     border-radius: 10px;
@@ -67,6 +115,7 @@ header h2 {
     margin-bottom: 10px;
 }
 
+/* Entry styles */
 .entry {
     display: flex;
     justify-content: center;
@@ -89,7 +138,7 @@ header h2 {
     height: 50%;
     border-radius: 10px;
     border-style: solid;
-    border-width:1px;
+    border-width: 1px;
     border-color: #252323;
 }
 
@@ -98,11 +147,11 @@ header h2 {
     height: 50%;
     border-radius: 10px;
     border-style: solid;
-    border-width:1px;
+    border-width: 1px;
     border-color: #252323;
 }
 
-.entry-desc{
+.entry-desc {
     display: inline-block;
     vertical-align: middle;
     overflow: hidden;
@@ -111,7 +160,7 @@ header h2 {
     margin-top: auto;
     word-wrap: break-word;
     border-style: solid;
-    border-width:1px;
+    border-width: 1px;
     border-radius: 10px;
     background-color: #F5F3F5;
     justify-content: center;
@@ -119,10 +168,12 @@ header h2 {
     padding: 10px 10px;
 }
 
+/* Logo styles */
 header .logo {
   color: #252323;
 }
 
+/* Toggle button styles */
 #toggle {
   position: absolute;
   width: 60px;
@@ -138,6 +189,7 @@ header .logo {
   cursor: pointer;
 }
 
+/* Close button styles */
 #close {
     position: fixed;
     width: 60px;
@@ -149,6 +201,7 @@ header .logo {
     transition: opacity 0.1s ease-in;
 }
 
+/* Showcase section styles */
 .showcase {
     position: absolute;
     right: 0;
@@ -170,6 +223,7 @@ header .logo {
   right: 300px;
 }
 
+/* Menu styles */
 .menu {
   position: fixed;
   top: 0;
@@ -204,6 +258,7 @@ header .logo {
   text-decoration: underline;
 }
 
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -211,6 +266,7 @@ body {
     background-color: #F5F3F5;
 }
 
+/* Flex navigation styles */
 .flexnav {
     display: flex;
     justify-content: space-between;
@@ -226,6 +282,7 @@ body {
     position: relative;
 }
 
+/* Hidden and show classes for transitions */
 .hidden {
     max-height: 0;
     opacity: 0;
@@ -242,6 +299,7 @@ body {
     opacity: 0;
 }
 
+/* Item flex styles */
 .itemflex {
     display: flex;
     justify-content: center;
@@ -249,6 +307,7 @@ body {
     padding: 20px;
 }
 
+/* Home flex styles */
 .homeflex {
     display: flex;
     justify-content: center;
@@ -259,6 +318,7 @@ body {
     margin: auto;
 }
 
+/* Item styles */
 .item {
     background-color: #F5F3F5;
     border-radius: 10px;
@@ -293,6 +353,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Home item styles */
 .homeitem {
     background-color: #F5F3F5;
     border-radius: 10px;
@@ -340,6 +401,7 @@ body {
     opacity: 1;
 }
 
+/* Bottom flex styles */
 .bottomflex {
     display: flex;
     justify-content: center;
@@ -349,6 +411,7 @@ body {
     margin: auto;
 }
 
+/* Home item about styles */
 .homeitem-about {
     display: flex;
     background-color: #F5F3F5;
@@ -396,6 +459,7 @@ body {
     border: 2px solid #252323;
     border-radius: 10px;
     background-color: #F5F3F5;
+    padding: 10px 10px;
 }
 
 .homeitem-about-image {
@@ -423,6 +487,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Ingredient list styles */
 .ingredient-list {
     list-style: none;
     padding: 10px 0;
@@ -439,38 +504,69 @@ body {
     transform: scale(1.5);
 }
 
+/* Directions styles */
 .directions {
     padding: 10px 0;
 }
 
+/* General heading styles */
 h2 {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
+/* Hidden link styles */
 .hiddenlink {
     text-decoration: none;
     color: inherit;
 }
 
+/* Main content styles */
 .mainplaces {
     margin: auto;
     margin-top: 1.9em;
     width: 100%;
 }
 
+/* References styles */
+.references {
+    list-style-type: disc;
+    padding: 20px 30px;
+}
+
+.references li {
+    margin-bottom: 10px;
+}
+
+.refbox {
+    padding: 20px;
+    border: 2px solid #252323;
+    border-radius: 10px;
+    background-color: #F5F3F5;
+}
+
+.gradbox {
+    padding: 20px;
+    border: 2px solid #252323;
+    border-radius: 10px;
+    background-color: #F5F3F5;
+}
+
+/* Main food styles */
 .mainfood {
     margin: auto;
     margin-top: 1em;
     width: 100%;
 }
 
+/* Main home styles */
 .mainhome {
     margin: auto;
     margin-top: 0.5em;
     width: 100%;
 }
 
+/* Responsive styles */
 @media (max-width: 800px) {
     .showcase, .showcase header {
         padding: 40px;
@@ -499,7 +595,7 @@ h2 {
         margin-top: auto;
         word-wrap: break-word;
         border-style: solid;
-        border-width:1px;
+        border-width: 1px;
         border-radius: 10px;
         background-color: #F5F3F5;
         justify-content: center;
@@ -521,7 +617,7 @@ h2 {
         height: 70%;
         border-radius: 10px;
         border-style: solid;
-        border-width:1px;
+        border-width: 1px;
         border-color: #252323;
     }
     
@@ -530,7 +626,7 @@ h2 {
         height: 85%;
         border-radius: 10px;
         border-style: solid;
-        border-width:1px;
+        border-width: 1px;
         border-color: #252323;
     }
 

@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Meta tags and stylesheets -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/styles-3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Places to Go</title>
         <script src="../js/scripts.js"></script>
     </head>
-    <div id="toggle" class="meow" onclick="openMenu();">
-        <i class="fas fa-bars fa-2xl"></i>
-    </div>
-    <section class="showcase" id="page">
-        <header>
-            <a class="hiddenlink" href="./go.html"><h2 class="logo">Places to Go</h2></a>
-        </header>
-        <main class="mainplaces">
-            <div class="smallgrid"> 
-                <div class="entry">
-                    <img src="../assets/images/lefkada.webp" class="entry-image">
-                    <div class="entry-desc">
-                        <a class="hiddenlink" href="./go/lefkada.html">
-                            <h3> Lefkada </h3>
-                            <span>
-                                Lefkada is a beautiful island located in the Ionian Sea, off the western coast of Greece. 
-                                The island is known for its stunning beaches, crystal-clear waters, and picturesque villages. 
-                                Some of the most popular beaches on the island include Porto Katsiki, Egremni, and Kathisma. 
-                                Lefkada is my personal favorite place to visit in Greece, and I highly recommend it to anyone looking for a relaxing and
-                                beautiful vacation spot.
-                            </span>
-                            <p><br>Click to learn more!</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="entryRev">
-                    <img src="../assets/images/halkidiki.jpg" class="entry-image">
-                    <div class="entry-desc">
-                        <a class="hiddenlink" href="./go/halkidiki.html">
-                            <h3> Halkidiki </h3>
-                            <span>
-                                Halkidiki is a region in northern Greece that is known for its blue flag beaches, local food, and an extremely large resort in Sani Beach. 
-                                The region is home to three peninsulas, each with its own unique character and attractions. 
-                                Some of the most popular beaches in the region include Sani Beach, Kallithea Beach, and Vourvourou Beach. 
-                                Halkidiki is a great place to visit if you are looking for a relaxing beach vacation with plenty of opportunities for outdoor activities.
-                            </span>
-                            <p><br>Click to learn more!</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="entry">
-                    <img src="../assets/images/ioannina.jpg" class="entry-image">
-                    <div class="entry-desc">
-                        <a class="hiddenlink" href="./go/ioannina.html">
-                            <h3> Ioannina </h3>
-                            <span>
-                                Ioannina is a city in northwestern Greece that is known for its beautiful lake, historic old town, and vibrant cultural scene. 
-                                The city is home to a number of interesting attractions, including the Ali Pasha Museum, the Byzantine Museum, and the Archaeological Museum. 
-                                Ioannina is also a great base for exploring the surrounding region, which is home to a number of beautiful villages, monasteries, and natural attractions.
-                            </span>
-                            <p><br>Click to learn more!</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </section>
-    <div class="menu">
-        <div id="close" class="hide" onclick="openMenu();">
-            <i class="fas fa-times fa-2xl"></i>
+    <body>
+        <!-- Menu toggle button -->
+        <div id="toggle" class="meow" onclick="openMenu();">
+            <i class="fas fa-bars fa-2xl"></i>
         </div>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./do.html">Things to Do</a></li>
-            <li><a href="./eat.html">Food to Eat</a></li>
-            <li><a href="./go.html">Places to Go</a></li>
-            <li><a href="./references.html">References</a></li>
-            <li><a href="./grading.html">Grading</a></li>
-        </ul>
-    </div>
+        <!-- Main content section -->
+        <main class="showcase" id="page">
+            <header>
+                <a class="hiddenlink" href="./go.html"><h2 class="logo">Places to Go</h2></a>
+            </header>
+            <section class="mainplaces">
+                <div class="smallgrid"> 
+                    <!-- Entry for Lefkada -->
+                    <div class="entry">
+                        <img src="../assets/images/lefkada.webp" class="entry-image" alt="A picture of Kathisma Beach">
+                        <div class="entry-desc">
+                            <a class="hiddenlink" href="./go/lefkada.html">
+                                <h3> Lefkada </h3>
+                                <span>
+                                    Lefkada is a beautiful island located in the Ionian Sea, off the western coast of Greece. 
+                                    The island is known for its stunning beaches, crystal-clear waters, and picturesque villages. 
+                                    Some of the most popular beaches on the island include Porto Katsiki, Egremni, and Kathisma. 
+                                    Lefkada is my personal favorite place to visit in Greece, and I highly recommend it to anyone looking for a relaxing and
+                                    beautiful vacation spot.
+                                </span>
+                                <p><br>Click to learn more!</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Entry for Halkidiki -->
+                    <div class="entryRev">
+                        <img src="../assets/images/halkidiki.jpg" class="entry-image" alt="A picture of Halkidiki">
+                        <div class="entry-desc">
+                            <a class="hiddenlink" href="./go/halkidiki.html">
+                                <h3> Halkidiki </h3>
+                                <span>
+                                    Halkidiki is a region in northern Greece that is known for its blue flag beaches, local food, and an extremely large resort in Sani Beach. 
+                                    The region is home to three peninsulas, each with its own unique character and attractions. 
+                                    Some of the most popular beaches in the region include Sani Beach, Kallithea Beach, and Vourvourou Beach. 
+                                    Halkidiki is a great place to visit if you are looking for a relaxing beach vacation with plenty of opportunities for outdoor activities.
+                                </span>
+                                <p><br>Click to learn more!</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Entry for Ioannina -->
+                    <div class="entry">
+                        <img src="../assets/images/ioannina.jpg" class="entry-image" alt="A picture of Ioannina">
+                        <div class="entry-desc">
+                            <a class="hiddenlink" href="./go/ioannina.html">
+                                <h3> Ioannina </h3>
+                                <span>
+                                    Ioannina is a city in northwestern Greece that is known for its beautiful lake, historic old town, and vibrant cultural scene. 
+                                    The city is home to a number of interesting attractions, including the Ali Pasha Museum, the Byzantine Museum, and the Archaeological Museum. 
+                                    Ioannina is also a great base for exploring the surrounding region, which is home to a number of beautiful villages, monasteries, and natural attractions.
+                                </span>
+                                <p><br>Click to learn more!</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Side menu -->
+        <div class="menu">
+            <div id="close" class="hide" onclick="openMenu();">
+                <i class="fas fa-times fa-2xl"></i>
+            </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./do.html">Things to Do</a></li>
+                <li><a href="./eat.html">Food to Eat</a></li>
+                <li><a href="./go.html">Places to Go</a></li>
+                <li><a href="./references.html">References</a></li>
+                <li><a href="./grading.html">Grading</a></li>
+            </ul>
+        </div>
+    </body>
 </html>

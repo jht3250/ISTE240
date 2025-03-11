@@ -5,76 +5,64 @@
         <link rel="stylesheet" href="../css/styles-3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="stylesheet" href="../css/styles-places.css">
+        <title>Home</title>
         <script src="../js/scripts.js"></script>
     </head>
     <body>
         <div id="toggle" class="meow" onclick="openMenu();">
             <i class="fas fa-bars fa-2xl"></i>
         </div>
-        <section class="showcase" id="page">
+        <main class="showcase" id="page">
             <header>
                 <h2 class="logo"> Visit Greece - John's Guide To Greece! </h2>
             </header>
-            <main class="mainhome">
+            <section class="mainhome">
                 <div class="homeflex">
                     <div class="homeitem">
                         <img src="../assets/images/map.jpg" class="homeitem-image" alt="A map of Lefkada">
                         <div class="homeitem-desc">
+                            <h2> Map of Greece </h2>
                             <span>
-                                <h2> Map </h2>
-                                Halkidiki is a region in northern Greece that is known for its blue flag beaches, local food, and an extremely large resort in Sani Beach. 
-                                The region is home to three peninsulas, each with its own unique character and attractions. 
-                                One of which, is home to Mount Athos, a mountain and peninsula in northeastern Greece, of which I will go into more detail below!
-                                Some of the most popular beaches in the region include Sani Beach, Kallithea Beach, and Vourvourou Beach. 
+                                Greece is a country in southeastern Europe with thousands of islands throughout the Aegean and
+                                Ionian seas. Each region has something unique to offer. Whether that be experiences, food, or 
+                                places to visit, Greece has it all. The most distinctive regions are the islands of course. 
+                                Separated from the mainland, each island offers a unique experience that you can't find anywhere else.
                             </span>
                         </div>
                     </div>
                     <div class="homeitem">
                         <div class="homeitem-desc selection do" onmouseover="toggleDescription(this)" onmouseout="toggleDescription(this)">
                             <a class="hiddenlink" href="./do.html"> 
-                                <span>
-                                    <h2 > Things to Do </h2>
-                                    <p class="hidden">
-                                        Halkidiki is a region in northern Greece that is known for its blue flag beaches, local food, and an extremely large resort in Sani Beach. 
-                                        The region is home to three peninsulas, each with its own unique character and attractions. 
-                                        One of which, is home to Mount Athos, a mountain and peninsula in northeastern Greece, of which I will go into more detail below!
-                                        Some of the most popular beaches in the region include Sani Beach, Kallithea Beach, and Vourvourou Beach. 
-                                    </p>
-                                </span>
+                                <h2 > Things to Do </h2>
+                                <p class="hidden">
+                                    Experience the culture of Greece by visiting landmarks, monasteries, and enjoying your time. 
+                                </p>
                             </a>
                         </div>
                         <div class="homeitem-desc selection eat" onmouseover="toggleDescription(this)" onmouseout="toggleDescription(this)">
                             <a class="hiddenlink" href="./do.html"> 
-                                <span>
-                                    <h2> Food to Eat </h2>
-                                    <p class="hidden">
-                                        Halkidiki is a region in northern Greece that is known for its blue flag beaches, local food, and an extremely large resort in Sani Beach. 
-                                        The region is home to three peninsulas, each with its own unique character and attractions. 
-                                        One of which, is home to Mount Athos, a mountain and peninsula in northeastern Greece, of which I will go into more detail below!
-                                        Some of the most popular beaches in the region include Sani Beach, Kallithea Beach, and Vourvourou Beach. 
-                                    </p>
-                                </span>
+                                <h2> Food to Eat </h2>
+                                <p class="hidden">
+                                    Enjoy the local cuisine of Greece by trying traditional dishes, and visiting local restaurants.
+                                    Each region has some sort of specialty that you can't find anywhere else!
+                                </p>
                             </a>
                         </div>
                         <div class="homeitem-desc selection go" onmouseover="toggleDescription(this)" onmouseout="toggleDescription(this)">
                             <a class="hiddenlink" href="./do.html"> 
-                                <span>
-                                    <h2> Places to Go </h2>
-                                    <p class="hidden">
-                                        Halkidiki is a region in northern Greece that is known for its blue flag beaches, local food, and an extremely large resort in Sani Beach. 
-                                        The region is home to three peninsulas, each with its own unique character and attractions. 
-                                        One of which, is home to Mount Athos, a mountain and peninsula in northeastern Greece, of which I will go into more detail below!
-                                        Some of the most popular beaches in the region include Sani Beach, Kallithea Beach, and Vourvourou Beach.
-                                    </p> 
-                                </span>
+                                <h2> Places to Go </h2>
+                                <p class="hidden">
+                                    Visit the beautiful regions of Greece by exploring the islands, the mountains, and the cities.
+                                    My favorite regions are Lefkada, Halkidiki, and Ioannina!
+                                </p> 
                             </a>
                         </div>
                     </div>
                     <div class="bottomflex">
                         <div class="homeitem-about">
                             <div class="homeitem-about-desc">
+                                <h2> About Me </h2>
                                 <span>
-                                    <h2> About Me </h2>
                                     <img src="../assets/images/john.png" class="homeitem-about-image" alt="A picture of John">
                                 </span>
                             </div>
@@ -91,8 +79,8 @@
                         </div>
                         <div class="homeitem-about">
                             <div class="homeitem-about-desc">
+                                <h2> Where my Family is From! </h2>
                                 <span>
-                                    <h2> Where my Family is From! </h2>
                                     <img src="../assets/images/greecefamily.png" class="homeitem-about-image" alt="A picture of John">
                                 </span>
                             </div>
@@ -105,10 +93,11 @@
                                     both. I hope you get to visit them too! 
                                 </span>
                             </div>
+                        </div>
                     </div>
                 </div>
-            </main>
-        </section>
+            </section>
+        </main>
         <div class="menu">
             <div id="close" class="hide" onclick="openMenu();">
                 <i class="fas fa-times fa-2xl"></i>
