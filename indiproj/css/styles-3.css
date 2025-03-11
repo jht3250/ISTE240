@@ -227,8 +227,15 @@ body {
 }
 
 .hidden {
+    max-height: 0;
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out, opacity 0.1s ease-out;
+}
+
+.show {
+    max-height: 1000px; /* Adjust as needed */
+    opacity: 1;
 }
 
 .hide {
@@ -253,7 +260,7 @@ body {
 }
 
 .item {
-    background-color: white;
+    background-color: #F5F3F5;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -264,7 +271,7 @@ body {
 .item-image {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #F5F3F5;
 }
 
 .item-desc {
@@ -287,7 +294,7 @@ body {
 }
 
 .homeitem {
-    background-color: white;
+    background-color: #F5F3F5;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -298,10 +305,15 @@ body {
 .homeitem-image {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #F5F3F5;
 }
 
 .homeitem-desc {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
@@ -317,7 +329,15 @@ body {
 }
 
 .homeitem-desc p {
-    margin-bottom: 10px;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.homeitem-desc p.show {
+    max-height: 1000px; /* Adjust as needed */
+    opacity: 1;
 }
 
 .bottomflex {
@@ -331,7 +351,7 @@ body {
 
 .homeitem-about {
     display: flex;
-    background-color: white;
+    background-color: #F5F3F5;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -339,16 +359,53 @@ body {
     width: 100%;
 }
 
+.selection {
+    cursor: pointer;
+    transition: opacity 0.1s ease-in;
+    border: 2px solid #252323;
+}
+
+.selection:hover {
+    opacity: 0.8;
+}
+
+.selection.eat {
+    background-image: url(../assets/images/gyro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.selection.go {
+    background-image: url(../assets/images/lefkada.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.selection.do {
+    background-image: url(../assets/images/paxos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.selection h2 {
+    border: 2px solid #252323;
+    border-radius: 10px;
+    background-color: #F5F3F5;
+} 
+.selection p {
+    border: 2px solid #252323;
+    border-radius: 10px;
+    background-color: #F5F3F5;
+}
+
 .homeitem-about-image {
-    width: 28em;
+    width: 10rem;
     height: auto;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #F5F3F5;
 }
 
 .homeitem-about-desc {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .homeitem-about-desc h3 {
@@ -402,6 +459,12 @@ h2 {
     width: 100%;
 }
 
+.mainfood {
+    margin: auto;
+    margin-top: 1em;
+    width: 100%;
+}
+
 .mainhome {
     margin: auto;
     margin-top: 0.5em;
@@ -438,7 +501,7 @@ h2 {
         border-style: solid;
         border-width:1px;
         border-radius: 10px;
-        background-color: lightblue;
+        background-color: #F5F3F5;
         justify-content: center;
         align-items: center;
         padding: 10px 10px;
@@ -476,25 +539,25 @@ h2 {
     }
 
     #toggle {
-        position: fixed;
+        position: absolute;
         width: 60px;
         height: 60px;
         cursor: pointer;
         z-index: 100;
         left: 90%;
         top: 2.8%;
-        transition: display 0.5s;
+        transition: opacity 0.1s;
     }
 
     #close {
-        position: fixed;
+        position: absolute;
         width: 60px;
         height: 60px;
         cursor: pointer;
         z-index: 100;
-        left: 90%;
+        left: 79.5%;
         top: 2.8%;
-        transition: display 0.5s;
+        transition: opacity 0.5s;
     }
 
     .menu ul li a {

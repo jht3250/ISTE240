@@ -10,34 +10,14 @@ function openMenu() {
     }
     element.classList.toggle("active");
 }
-  
-function changeImage(imageElement, newSrc) {
-    const mainImage = document.getElementById('main-image');
-    mainImage.classList.add('hidden');
-    setTimeout(() => {
-        mainImage.src = newSrc;
-        mainImage.classList.remove('hidden');
-    }, 200); // Match the duration of the CSS transition
-}
 
-function revertImage() {
-    const mainImage = document.getElementById('main-image');
-    mainImage.classList.add('hidden');
-    setTimeout(() => {
-        mainImage.src = '../assets/images/santorini.webp';
-        mainImage.classList.remove('hidden');
-    }, 200); // Match the duration of the CSS transition
-}
-
-function toggleDescription(image) {
-    const desc = image.nextElementSibling;
-    if (desc.classList.contains('hidden')) {
-        desc.classList.remove('hidden');
-        // Reset animation by re-adding the class
-        void desc.offsetWidth;
-        desc.classList.add(desc.classList.contains('slide-right') ? 'slide-right' : 'slide-left');
+function toggleDescription(element) {
+    const p = element.querySelector('p');
+    if (p.classList.contains('hidden')) {
+        p.classList.remove('hidden');
+        p.classList.add('show');
     } else {
-        desc.classList.add('hidden');
-        desc.classList.remove('slide-right', 'slide-left');
+        p.classList.add('hidden');
+        p.classList.remove('show');
     }
 }
