@@ -1,60 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles-sub1.css">
+        <link rel="stylesheet" href="../css/styles-3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        
         <script src="../js/scripts.js"></script>
-        <title>Food to Eat</title>
     </head>
-    <body>
+    <div id="toggle" class="meow" onclick="openMenu();">
+        <i class="fas fa-bars fa-2xl"></i>
+    </div>
+    <section class="showcase" id="page">
         <header>
-            <h1>John's Guide to Greece</h1>
-            <nav>
-                <ul class="flexnav">
-                    <li class="dropdown">
-                        <a href="../html/index.html" class="nav-button">Home</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/go.html" class="nav-button">Go</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/eat.html" class="nav-button">Eat</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/do.html" class="nav-button">Do</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/see.html" class="nav-button">See</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+            <h2 class="logo">Food to Eat</h2>
         </header>
-        <main>
-
+        <main class="mainplaces">
+            <div class="smallgrid"> 
+                <div class="entry">
+                    <img src="../assets/images/kreatopita.jpeg" class="entry-image">
+                    <div class="entry-desc">
+                        <a class="hiddenlink" href="./eat/kreatopita.html">
+                            <h3> Kreatopita </h3>
+                            <span>
+                                Kreatopita is a traditional Greek meat pie that is made with ground beef, onions, and spices, all wrapped in a flaky phyllo pastry. 
+                                The pie is typically served as a main course or as a snack. It is my favorite food from my childhood. Nothing comes close. 
+                                Kreatopita is a popular dish in Greece, and is often served at family gatherings, festivals, and other special occasions. 
+                                The best Kreatopita I have ever had was on top of a mountain in Sivota at the smallest restaurant known to man.
+                            </span>
+                            <p><br>Click to learn more!</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="entryRev">
+                    <img src="../assets/images/gyro.jpg" class="entry-image">
+                    <div class="entry-desc">
+                        <a class="hiddenlink" href="./eat/gyro.html">
+                            <h3> Gyro </h3>
+                            <span>
+                                If you're going to Greece, you have to try an authentic gyro. A gyro is a popular Greek dish that is made with meat, 
+                                usually pork or chicken, that is cooked on a vertical rotisserie and then sliced and served in a pita bread with tomatoes, onions, and tzatziki sauce.
+                                The best Gyro are found in Thessaloniki! I have never had a better Gyro than the ones I had from a small hole in the wall on the street.
+                            </span>
+                            <p><br>Click to learn more!</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="entry">
+                    <img src="../assets/images/pontian.jpg" class="entry-image">
+                    <div class="entry-desc">
+                        <h3> Pontian Food </h3>
+                        <span>
+                            Pontian cuisine is a type of Greek cuisine that is native to the Pontus region of northeastern Turkey. 
+                            The cuisine is known for its use of fresh, local ingredients, and its emphasis on simple, rustic flavors. 
+                            Some of the most popular dishes in Pontian cuisine include ivristo, kourkoubinia, and dolmades. 
+                            Pontian food may seem like the planes are still flying overhead, but it is a must try if you are in Greece.
+                        </span>
+                    </div>
+                </div>
+            </div>
         </main>
-        <footer>
-            <p>&copy; 2025 John Treon. All rights reserved.</p>
-        </footer>
-    </body>
+    </section>
+    <div class="menu">
+        <div id="close" class="hide" onclick="openMenu();">
+            <i class="fas fa-times fa-2xl"></i>
+        </div>
+        <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./do.html">Things to Do</a></li>
+        <li><a href="./eat.html">Food to Eat</a></li>
+        <li><a href="./go.html">Places to Go</a></li>
+        </ul>
+    </div>
 </html>

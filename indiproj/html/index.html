@@ -1,40 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/styles-3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="../css/styles-places.css">
         <script src="../js/scripts.js"></script>
     </head>
-    <div id="toggle" class="meow" onclick="openMenu();">
-        <i class="fas fa-bars"></i>
-    </div>
-    <section class="showcase" id="page">
-        <header>
-            <h2 class="logo">Visit Greece</h2>
-        </header>
-        <main class="homepage-layout">
-            <div class="left-image">
-                <img id="main-image" src="../assets/images/santorini.webp" alt="Greece" />
-            </div>
-            <div class="right-links">
-                    <a href="../html/go.html" class="link-box" data-image="../assets/images/map.jpg" onmouseover="changeImage(this, this.getAttribute('data-image'))" onmouseout="revertImage()">Places to Go</a>
-                    <a href="../html/eat.html" class="link-box" data-image="../assets/images/food.jpg" onmouseover="changeImage(this, this.getAttribute('data-image'))" onmouseout="revertImage()">Food to Eat</a>
-                    <a href="../html/do.html" class="link-box" data-image="../assets/images/turtle.jpg" onmouseover="changeImage(this, this.getAttribute('data-image'))" onmouseout="revertImage()">Things to Do</a>
-                    <a href="../html/see.html" class="link-box bottom" data-image="../assets/images/parthenon.jpg" onmouseover="changeImage(this, this.getAttribute('data-image'))" onmouseout="revertImage()">Things to See</a>
-            </div>
-        </main>
-    </section>
-    <div class="menu">
-        <div id="close" class="hide" onclick="openMenu();">
-            <i class="fas fa-times"></i>
+    <body>
+        <div id="toggle" class="meow" onclick="openMenu();">
+            <i class="fas fa-bars fa-2xl"></i>
         </div>
-        <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./do.html">Things to Do</a></li>
-        <li><a href="./eat.html">Food to Eat</a></li>
-        <li><a href="./see.html">Things to See</a></li>
-        <li><a href="./go.html">Places to Go</a></li>
-        </ul>
-    </div>
-    
+        <section class="showcase" id="page">
+            <header>
+                <h2 class="logo"> Visit Greece - John's Guide To Greece! </h2>
+            </header>
+            <main class="mainhome">
+                <div class="homeflex">
+                    <div class="homeitem">
+                        <img src="../assets/images/map.jpg" class="homeitem-image" alt="A map of Lefkada">
+                        <div class="homeitem-desc">
+                            <span>
+                                <h2> Map </h2>
+                                Halkidiki is a region in northern Greece that is known for its blue flag beaches, local food, and an extremely large resort in Sani Beach. 
+                                The region is home to three peninsulas, each with its own unique character and attractions. 
+                                One of which, is home to Mount Athos, a mountain and peninsula in northeastern Greece, of which I will go into more detail below!
+                                Some of the most popular beaches in the region include Sani Beach, Kallithea Beach, and Vourvourou Beach. 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="homeitem">
+                        <div class="homeitem-desc">
+                            <span>
+                                <h2> Map </h2>
+                                Halkidiki is a region in northern Greece that is known for its blue flag beaches, local food, and an extremely large resort in Sani Beach. 
+                                The region is home to three peninsulas, each with its own unique character and attractions. 
+                                One of which, is home to Mount Athos, a mountain and peninsula in northeastern Greece, of which I will go into more detail below!
+                                Some of the most popular beaches in the region include Sani Beach, Kallithea Beach, and Vourvourou Beach. 
+                            </span>
+                        </div>
+                        <div class="homeitem-desc">
+                            <span>
+                                <h2> Map </h2>
+                                Halkidiki is a region in northern Greece that is known for its blue flag beaches, local food, and an extremely large resort in Sani Beach. 
+                                The region is home to three peninsulas, each with its own unique character and attractions. 
+                                One of which, is home to Mount Athos, a mountain and peninsula in northeastern Greece, of which I will go into more detail below!
+                                Some of the most popular beaches in the region include Sani Beach, Kallithea Beach, and Vourvourou Beach. 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bottomflex">
+                        <div class="homeitem-about">
+                            <div class="homeitem-desc">
+                                <span>
+                                    <h2> About Me </h2>
+                                    <img src="../assets/images/john.png" class="homeitem-about-image" alt="A picture of John">
+                                </span>
+                            </div>
+                            <div class="homeitem-about-desc">
+                                <span>
+                                    My name is John Treon, I am a 2nd-generation Greek-American who has been visiting Greece since I was a child. I have a lot of family 
+                                    in Greece, and I have been lucky enough to visit many of the beautiful places that Greece has to offer. I have been to the islands, the 
+                                    mountains, the cities, and the countryside. I have eaten the food, swam in the sea, and danced at the festivals. Greece is a wonderful 
+                                    country with the most welcoming people you will ever meet. I hope that my travel log will inspire you to visit Greece and experience a 
+                                    little bit of my culture! <br><br> Pictured on the left, is myself, with my amazing hat, of which, my wife offered severe disdain to. 
+                                    I thought it was cool. I hope you do too.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="homeitem-about">
+                            <div class="homeitem-desc">
+                                <span>
+                                    <h2> Where my Family is From! </h2>
+                                    <img src="../assets/images/greecefamily.png" class="homeitem-about-image" alt="A picture of John">
+                                </span>
+                            </div>
+                            <div class="homeitem-about-desc">
+                                <span>
+                                    My family comes from two main regions of Greece: Katerini, and Ioannina. My father is from Katerini, a small city in northern Greece, near Thessaloniki
+                                    that is known for its city center, full of shops, cafes, and restaurants. The city is quaint, but that means you can walk everywhere! On 
+                                    the other hand Ioannina, where my mother is from, is a rural area in northwestern Greece, near Albania. The area is known for its large lake, 
+                                    and vibrant nightlife. It is home to many mountains, and is a great place to go hiking. I have been to both places many times, and I love them
+                                    both. I hope you get to visit them too! 
+                                </span>
+                            </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <div class="menu">
+            <div id="close" class="hide" onclick="openMenu();">
+                <i class="fas fa-times fa-2xl"></i>
+            </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./do.html">Things to Do</a></li>
+                <li><a href="./eat.html">Food to Eat</a></li>
+                <li><a href="./go.html">Places to Go</a></li>
+            </ul>
+        </div>
+    </body>
 </html>

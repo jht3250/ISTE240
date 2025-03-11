@@ -1,60 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles-sub1.css">
+        <link rel="stylesheet" href="../css/styles-3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <script src="../js/scripts.js"></script>
-        <title>Things to Do</title>
     </head>
-    <body>
+    <div id="toggle" class="meow" onclick="openMenu();">
+        <i class="fas fa-bars fa-2xl"></i>
+    </div>
+    <section class="showcase" id="page">
         <header>
-            <h1>John's Guide to Greece</h1>
-            <nav>
-                <ul class="flexnav">
-                    <li class="dropdown">
-                        <a href="../html/index.html" class="nav-button">Home</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/go.html" class="nav-button">Go</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/eat.html" class="nav-button">Eat</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/do.html" class="nav-button">Do</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../html/see.html" class="nav-button">See</a>
-                        <div class="dropdown-content">
-                            <a href="#">Thing 1</a>
-                            <a href="#">Thing 2</a>
-                            <a href="#">Thing 3</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+            <h2 class="logo">Things to Do</h2>
         </header>
-        <main>
-
+        <main class="mainplaces">
+            <div class="smallgrid"> 
+                <div class="entry">
+                    <img src="../assets/images/paxos.jpg" class="entry-image">
+                    <div class="entry-desc">
+                        <a class="hiddenlink" href="./do/paxos.html">
+                            <h3> Paxos Blue Caves </h3>
+                            <span>
+                                The Blue Caves of Paxos are a series of sea caves that are located on the northern coast of the island of Paxos.
+                                You can get to them by boat, usually leaving from Kerkira. The boat I went with, had a seabob, which is a small underwater propulsion 
+                                device that you hold onto. It was the coolest thing I have ever done in the water. The caves are really cool, but the seabob was so fun to zip around with. 
+                                The best time to visit the Blue Caves is in the morning, when the sunlight is at its brightest and the water is at its bluest.
+                            </span>
+                            <p><br>Click to learn more!</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="entryRev">
+                    <img src="../assets/images/vikos.jpg" class="entry-image">
+                    <div class="entry-desc">
+                        <a class="hiddenlink" href="./do/vikos.html">
+                            <h3> Canyon of Vikos </h3>
+                            <span>
+                                The Vikos Gorge is a canyon in the Pindus Mountains of northern Greece that is known for being one of the deepest canyons in the world. 
+                                The best way to explore the Vikos Gorge is on foot, either by hiking along the rim of the canyon or by descending into the gorge itself. I personally went 
+                                along the rim of the canyon, where a monastery is located. I took the picture used here! It was really cool to be so high up, looking into the gorge.
+                            </span>
+                            <p><br>Click to learn more!</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="entry">
+                    <img src="../assets/images/meteora.jpg" class="entry-image">
+                    <div class="entry-desc">
+                        <h3> Relax </h3>
+                        <span>
+                            Sometimes, the best thing to do is nothing at all. Greece is a beautiful country with a lot to offer, but sometimes it's nice to just, have nothing to do. 
+                            Taking breaks is crucial. It gets really tiring to be doing things all the time. I took this picture in Meteora, where I was just sitting on a bench, looking at the view.
+                        </span>
+                    </div>
+                </div>
+            </div>
         </main>
-        <footer>
-            <p>&copy; 2025 John Treon. All rights reserved.</p>
-        </footer>
-    </body>
+    </section>
+    <div class="menu">
+        <div id="close" class="hide" onclick="openMenu();">
+            <i class="fas fa-times fa-2xl"></i>
+        </div>
+        <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./do.html">Things to Do</a></li>
+        <li><a href="./eat.html">Food to Eat</a></li>
+        <li><a href="./go.html">Places to Go</a></li>
+        </ul>
+    </div>
 </html>
