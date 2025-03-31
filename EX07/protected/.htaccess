@@ -1,0 +1,6 @@
+AuthName "Restricted Area"
+AuthType Basic
+
+#Put the path to your htpasswd file. This will be different, put in your username instead of npsics
+AuthUserFile /home/MAIN/jht3250/240/.htpasswd
+require valid-user
