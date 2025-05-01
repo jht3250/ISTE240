@@ -21,3 +21,46 @@ function toggleDescription(element) {
         p.classList.remove('show');
     }
 }
+
+function validateForm() {
+    const from = document.getElementById('from').value.trim();
+    const message = document.getElementById('message').value.trim();
+    var isValid = true;
+
+    if (!from) {
+        alert('Please enter your name.');
+        return false;
+    }
+
+    if (!message) {
+        alert('Please enter your message.');
+        return false;
+    }
+
+    return true;
+}
+
+function openLoginPopup() {
+    document.getElementById('loginPopup').style.display = 'block';
+}
+
+function closeLoginPopup() {
+    document.getElementById('loginPopup').style.display = 'none';
+}
+
+function validateLoginForm() {
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
+
+    if (!username) {
+        alert('Please enter your username.');
+        return false;
+    }
+
+    if (!password) {
+        alert('Please enter your password.');
+        return false;
+    }
+
+    return true;
+}
